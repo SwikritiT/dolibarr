@@ -41,3 +41,11 @@ htdocs/includes/squizlabs/
 htdocs/includes/symfony/
 htdocs/includes/webmozart/
 htdocs/.well-known/apple-developer-merchantid-domain-association
+
+# Node Modules
+build/yarn-error.log
+build/node_modules/
+node_modules/
+
+#yarn.lock
+yarn.lock
