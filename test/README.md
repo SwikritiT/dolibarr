@@ -4,13 +4,23 @@
 
 Selenium has been used for automating the browser.
 
+[Download](https://www.selenium.dev/downloads/) the latest stable version of the Selenium standalone server JAR file.
+
+Lastly, [download](https://chromedriver.chromium.org/) the `latest stable version` of `Chrome Driver`.
+
+Once you have downloaded `Chrome Driver`, you need to unzip it by running the following command:
+
+`unzip chromedriver_linux64.zip`
+
+Once you have unzipped it, you need to move the chromedriver(shared library) and place it inside the same folder where you have placed the Selenium standalone server file.
+
 We can run selenium by two ways:
 
-* Usually, for running tests using selenium we download `selenium standalone server JAR file` and `chrome driver` and start selenium server with a command which usually looks like:
+* Now start `selenium server` with a command which usually looks like:
 
    `java -jar selenium-server-standalone-<selenium version>.jar -port <port-no>`
 
-* Run selenium in docker with
+* Run `selenium` in `docker` with
 
    `docker run -d -p 4444:4444 -p 5900:5900 -v /dev/shm:/dev/shm selenium/standalone-chrome-debug`
 
